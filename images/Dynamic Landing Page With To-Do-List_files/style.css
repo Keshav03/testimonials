@@ -1,0 +1,572 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    z-index: 0;
+    background-image: url(image/image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0vw;
+}
+
+
+/*START OF DESKTOP*/
+@media only screen and (min-width:1024px) {
+    
+
+#modalContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal{
+    position: relative;
+    width: 30%;
+    height: 30%;
+    background: rgb(168, 165, 165);
+    z-index: 1;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+
+#welcome{
+    color:#2a4747;
+    margin-top: 35px;
+}
+
+#welcomeMsg{
+    color:#213737;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+#nameInput{
+    position: relative;
+    width: 60%;
+    margin:0 auto;
+    margin-top: 10px;
+    height: 30px;
+    padding:1px 5px 1px 10px;
+    /* border-radius: 5px; */
+    border: transparent;
+    background-color: transparent;
+    color:#213737;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    border-bottom: 4px #2a4747 solid;
+    outline: none;
+}
+
+ #clear{
+    position: absolute;
+    background: transparent;
+    outline: none;
+    border: none;
+    color:rgb(236, 67, 67);
+    font-weight: 600;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    top:80%;
+    left:25%;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+#nextBtn{
+    position: absolute;
+    border:none;
+    width: auto;
+    padding: 5px 15px;
+    font-size: 15px;
+    color: white;
+    background: rgb(30, 172, 94);
+    right:25%;
+    top:80%; 
+    cursor:pointer;
+    border-radius:10px;
+}
+
+
+#clearBtn{
+    position: absolute;
+    border:none;
+    width: 7%;
+    padding: 5px 30px;
+    font-size: 15px;
+    color: white;
+    background: rgba(221, 98, 98, 0.596);
+    right:3%;
+    top:3%; 
+    cursor:pointer;
+    border-radius:10px;
+}
+
+#clearBtn:hover{
+    background: rgb(221, 98, 98);
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.349);
+}
+
+#clock{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 15vh;
+    /* background: #a8dadc; */
+}
+#days,#hours,#minutes,#seconds,#ampm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    margin: 0 10px;
+    background: #00000063;
+    text-align: center;
+}
+
+#hour,#minute,#second,#am-pm{
+    color:white;
+    font-size:45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#day,#am-pm{
+    color:white;
+    font-size:45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.semicolon{
+    font-size: 50px;
+    color:white
+}
+
+
+#greeting{
+    height: 25vh;
+    color :white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-top: 40px;
+    letter-spacing:8px;
+}
+
+#greetings{
+    font-size: 40px;
+
+}
+
+#name{
+    margin-top:10px ;
+    font-size: 25px;
+}
+
+#to-do{
+    position: relative;
+    background: #00000063;
+    width: 30vw;
+    height: 30%;
+    margin-top: -50px;
+    color:white;
+    padding: 18px;
+}
+
+
+#agenda{
+    font-size:18px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+#listContainer{
+    width: 100%;
+    height: 80%;
+    margin-top:10px ;
+    overflow-y: scroll;
+}
+
+#listContainer::-webkit-scrollbar{
+    background:rgba(0, 0, 0, 0.956);
+    background: rgb(255, 255, 255);
+ }
+ 
+#myList {
+    padding: 15px;
+    padding-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    list-style: none;
+}
+
+#myList li {
+    background: rgba(163, 159, 159, 0.25);
+    padding: 2.5px 5px ;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+}
+
+#addBtn{
+    position: absolute;
+    border:none;
+    width: 25%;
+    padding: 5px 25px;
+    font-size: 15px;
+    color: white;
+    background: rgba(76, 216, 76, 0.700);
+    left:50%;
+    top:100%; 
+    transform: translate(-50%,-50%);
+    cursor:pointer;
+    border-radius:10px;
+}
+
+#addBtn:hover{
+    background: rgb(30, 172, 94);;
+}
+
+#input{
+    position: relative;
+    margin-top: 25px;
+    width: 30%;
+    height: 30px;
+    padding:1px 5px 1px 25px;
+    /* border-radius: 5px; */
+    border: transparent;
+    background-color: rgba(0, 0, 0, 0.4);
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    border-bottom: 2px white solid;
+}
+
+#input:hover{
+    border-bottom:2px rgba(76, 216, 76, 1.0) solid;
+}
+
+#input:focus{
+    outline: none;
+    border-bottom:2px rgba(76, 216, 76, 1.0) solid;
+}
+
+} 
+
+/*END OF DESKTOP*/
+
+
+/*START OF TABLET*/
+@media only screen and (min-width:768px)and (max-width:1023px) {
+
+    #modalContainer{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        z-index: 1;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #modal{
+        position: relative;
+        width: 30%;
+        height: 30%;
+        background: rgb(168, 165, 165);
+        z-index: 1;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 10px;
+    }
+    
+    
+    #welcome{
+        color:#2a4747;
+        margin-top: 35px;
+    }
+    
+    #welcomeMsg{
+        color:#213737;
+        margin-top: 15px;
+        font-weight: 700;
+    }
+    
+    #nameInput{
+        position: relative;
+        width: 60%;
+        margin:0 auto;
+        margin-top: 10px;
+        height: 30px;
+        padding:1px 5px 1px 10px;
+        /* border-radius: 5px; */
+        border: transparent;
+        background-color: transparent;
+        color:#213737;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        border-bottom: 4px #2a4747 solid;
+        outline: none;
+    }
+    
+     #clear{
+        position: absolute;
+        background: transparent;
+        outline: none;
+        border: none;
+        color:rgb(236, 67, 67);
+        font-weight: 600;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        top:80%;
+        left:25%;
+        cursor: pointer;
+        padding: 5px 15px;
+    }
+    
+    #nextBtn{
+        position: absolute;
+        border:none;
+        width: auto;
+        padding: 5px 15px;
+        font-size: 15px;
+        color: white;
+        background: rgb(30, 172, 94);
+        right:25%;
+        top:80%; 
+        cursor:pointer;
+        border-radius:10px;
+    }
+    
+    
+    #clearBtn{
+        position: absolute;
+        border:none;
+        width: 7%;
+        padding: 5px 30px;
+        font-size: 15px;
+        color: white;
+        background: rgba(221, 98, 98, 0.596);
+        right:3%;
+        top:3%; 
+        cursor:pointer;
+        border-radius:10px;
+    }
+    
+    #clearBtn:hover{
+        background: rgb(221, 98, 98);
+    }
+    
+    #container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.349);
+    }
+    
+    #clock{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50%;
+        height: 15vh;
+        /* background: #a8dadc; */
+    }
+    #days,#hours,#minutes,#seconds,#ampm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: 100%;
+        margin: 0 10px;
+        background: #00000063;
+        text-align: center;
+    }
+    
+    #hour,#minute,#second,#am-pm{
+        color:white;
+        font-size:45px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    
+    #day,#am-pm{
+        color:white;
+        font-size:45px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .semicolon{
+        font-size: 50px;
+        color:white
+    }
+    
+    
+    #greeting{
+        height: 25vh;
+        color :white;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        margin-top: 40px;
+        letter-spacing:8px;
+    }
+    
+    #greetings{
+        font-size: 40px;
+    
+    }
+    
+    #name{
+        margin-top:10px ;
+        font-size: 25px;
+    }
+    
+    #to-do{
+        position: relative;
+        background: #00000063;
+        width: 30vw;
+        height: 30%;
+        margin-top: -50px;
+        color:white;
+        padding: 18px;
+    }
+    
+    
+    #agenda{
+        font-size:18px;
+        letter-spacing: 1px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    
+    #listContainer{
+        width: 100%;
+        height: 80%;
+        margin-top:10px ;
+        overflow-y: scroll;
+    }
+    
+    #listContainer::-webkit-scrollbar{
+        background:rgba(0, 0, 0, 0.956);
+        background: rgb(255, 255, 255);
+     }
+     
+    #myList {
+        padding: 15px;
+        padding-top: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+        list-style: none;
+    }
+    
+    #myList li {
+        background: rgba(163, 159, 159, 0.25);
+        padding: 2.5px 5px ;
+        margin: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: capitalize;
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        border-radius: 5px;
+    }
+    
+    #addBtn{
+        position: absolute;
+        border:none;
+        width: 25%;
+        padding: 5px 25px;
+        font-size: 15px;
+        color: white;
+        background: rgba(76, 216, 76, 0.700);
+        left:50%;
+        top:100%; 
+        transform: translate(-50%,-50%);
+        cursor:pointer;
+        border-radius:10px;
+    }
+    
+    #addBtn:hover{
+        background: rgb(30, 172, 94);;
+    }
+    
+    #input{
+        position: relative;
+        margin-top: 25px;
+        width: 30%;
+        height: 30px;
+        padding:1px 5px 1px 25px;
+        /* border-radius: 5px; */
+        border: transparent;
+        background-color: rgba(0, 0, 0, 0.4);
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        border-bottom: 2px white solid;
+    }
+    
+    #input:hover{
+        border-bottom:2px rgba(76, 216, 76, 1.0) solid;
+    }
+    
+    #input:focus{
+        outline: none;
+        border-bottom:2px rgba(76, 216, 76, 1.0) solid;
+    }
+
+
+
+}
+/*END OF TABLET*/
+
+
+
+/*START OF TABLET*/
+@media only screen and (max-width:767px) {
+
+
+
+
+
+}
+/*END OF TABLET*/

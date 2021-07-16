@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Landing Page With To-Do-List</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./Dynamic Landing Page With To-Do-List_files/style.css"></head>
+<body data-new-gr-c-s-check-loaded="14.1020.0" data-gr-ext-installed="">
+
+    <button id="clearBtn" onclick="clear()">Clear</button>
+    
+    <div id="modalContainer">
+        <div id="modal">
+            <h2 id="welcome">Welcome On Board!</h2>
+            <p id="welcomeMsg">Please enter your name to proceed</p>
+            <input type="text" id="nameInput" placeholder="Enter Your Name Here ...">
+            <button id="clear">Clear</button>
+            <button id="nextBtn">Next</button>
+        </div>
+
+    </div>
+
+    
+
+    <div id="container">
+
+
+
+        <!-- Time Container Here -->
+        <div id="clock">
+            <div id="days">
+                <p id="day">Mon</p>
+            </div>
+            <div id="hours">
+                <p id="hour">18</p>
+            </div>
+            <p class="semicolon">:</p>
+            <div id="minutes">
+                <p id="minute">12</p>
+            </div>
+            <p class="semicolon">:</p>
+            <div id="seconds">
+                <p id="second">40</p>
+            </div>
+            <div id="ampm">
+                <p id="am-pm">PM</p>
+            </div>
+    
+        </div>
+
+
+        <!-- Greeting Container -->
+        <div id="greeting">
+            <h1 id="greetings">Good Evening,</h1>
+            <h2 id="name">Keshav Bokhoree</h2>
+        </div>
+
+
+        <!-- To-Do-List Container -->
+        <div id="to-do">
+            <p id="agenda">To-DO-List</p>
+            <div id="listContainer">
+                <ol id="myList"></ol>
+            </div>
+            <button id="addBtn">Add Task</button>
+
+        </div>
+        <input type="text" id="input" placeholder="Enter Task ...">
+
+    </div>
+
+
+    <script src="./Dynamic Landing Page With To-Do-List_files/index.js.download"></script>
+    
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<div id="e_e_asin" style="all: initial;"><style type="text/css">@font-face{font-family:Inter;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-100.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-100.eot?#iefix) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-100.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-100.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-100.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-100.svg) format("svg");font-weight:100;font-style:normal}@font-face{font-family:Inter;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-100.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-100.eot?#iefix) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-100.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-100.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-100.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-100.svg) format("svg");font-weight:100;font-style:italic}@font-face{font-family:Inter;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-200.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-200.eot?#iefix) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-200.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-200.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-200.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-200.svg) format("svg");font-weight:200;font-style:normal}@font-face{font-family:Inter;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-200.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-200.eot?#iefix) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-200.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-200.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-200.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-200.svg) format("svg");font-weight:200;font-style:italic}@font-face{font-family:Inter;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-300.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-300.eot?#iefix) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-300.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-300.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-300.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-300.svg) format("svg");font-weight:300;font-style:normal}@font-face{font-family:Inter;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-300.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-300.eot?#iefix) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-300.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-300.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-300.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-300.svg) format("svg");font-weight:300;font-style:italic}@font-face{font-family:Inter;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-regular.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-regular.eot?#iefix) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-regular.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-regular.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-regular.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-regular.svg) format("svg");font-weight:400;font-style:normal}@font-face{font-family:Inter;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-500.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-500.eot?#iefix) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-500.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-500.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-500.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-500.svg) format("svg");font-weight:500;font-style:normal}@font-face{font-family:Inter;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-500.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-500.eot?#iefix) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-500.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-500.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-500.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-500.svg) format("svg");font-weight:500;font-style:italic}@font-face{font-family:Inter;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-600.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-600.eot?#iefix) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-600.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-600.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-600.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-600.svg) format("svg");font-weight:600;font-style:normal}@font-face{font-family:Inter;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-600.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-600.eot?#iefix) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-600.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-600.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-600.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-600.svg) format("svg");font-weight:600;font-style:italic}@font-face{font-family:Inter;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-700.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-700.eot?#iefix) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-700.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-700.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-700.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-700.svg) format("svg");font-weight:700;font-style:normal}@font-face{font-family:Inter;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-700.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-700.eot?#iefix) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-700.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-700.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-700.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-700.svg) format("svg");font-weight:700;font-style:italic}@font-face{font-family:Inter;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-800.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-800.eot?#iefix) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-800.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-800.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-800.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-800.svg) format("svg");font-weight:800;font-style:normal}@font-face{font-family:Inter;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-800.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-800.eot?#iefix) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-800.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-800.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-800.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-800.svg) format("svg");font-weight:800;font-style:italic}@font-face{font-family:Inter;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-900.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-900.eot?#iefix) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-900.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-900.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-900.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-900.svg) format("svg");font-weight:900;font-style:normal}@font-face{font-family:Inter;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-900.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-900.eot?#iefix) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-900.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-900.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-900.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/Inter/inter-v2-latin-900.svg) format("svg");font-weight:900;font-style:italic}@font-face{font-family:FontAwesome;src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/fontawesome-webfont.eot);src:url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0) format("embedded-opentype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/fontawesome-webfont.woff2) format("woff2"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/fontawesome-webfont.woff) format("woff"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/fontawesome-webfont.ttf) format("truetype"),url(chrome-extension://emalgedpdlghbkikiaeocoblajamonoh/fonts/fontawesome-webfont.svg#fontawesomeregular) format("svg");font-weight:400;font-style:normal}</style><style type="text/css">#__wikibuy__ .__wikibuy.__onTop,#earny-root,#honeyContainer,#piggyWrapper,body~div:not(#gdx-bubble-host){position:absolute!important;z-index:100000!important}body[data-shop-url="https://www.honeybum.com"] header>.header{z-index:99999}.mm-slideout{z-index:auto}.sorry-for-this__empty-styles{position:relative;z-index:10000}</style><div style="all: initial;"></div></div></body></html>
